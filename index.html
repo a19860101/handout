@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課程講義入口 | Course Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        muji: {
+                            bg: '#f7f7f5',      /* 米色背景 */
+                            card: '#ffffff',    /* 白色卡片 */
+                            main: '#333333',    /* 深灰主字 */
+                            sub: '#777777',     /* 淺灰副字 */
+                            line: '#e0e0e0',    /* 分隔線 */
+                            accent: '#7F0019',  /* 重點紅 */
+                            hover: '#f2f2f0',   /* 懸停色 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-muji-bg text-muji-main font-sans tracking-wide min-h-screen flex justify-center p-5 md:p-10 leading-loose">
+
+    <div class="w-full max-w-[700px] bg-muji-card p-8 md:p-12 shadow-[0_2px_10px_rgba(0,0,0,0.03)]">
+        
+        <header class="mb-12 border-b-2 border-muji-main pb-5">
+            <h1 class="text-2xl font-medium mb-1">課程資料庫</h1>
+            <p class="text-sm text-muji-sub">Course Materials & Handouts</p>
+        </header>
+
+        <div class="mb-10">
+            <h2 class="text-xs font-bold text-muji-accent uppercase mb-4">Photoshop</h2>
+            <ul>
+                <li class="border-b border-muji-line group">
+                    <a href="/photoshop" target="_blank" class="block flex justify-between items-center py-4 transition-all duration-200 hover:bg-muji-hover hover:pl-3">
+                        <span>Photoshop</span>
+                        <span class="text-xs text-muji-sub">01/09</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mb-10">
+            <h2 class="text-xs font-bold text-muji-accent uppercase mb-4">靜態攝影基礎</h2>
+            <ul>
+                <li class="border-b border-muji-line group">
+                    <a href="#" class="block flex justify-between items-center py-4 transition-all duration-200 hover:bg-muji-hover hover:pl-3">
+                        <span>曝光三角講義 (Slides)</span>
+                        <span class="text-xs text-muji-sub">View</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <footer class="mt-16 pt-5 border-t border-muji-line text-xs text-muji-sub text-center">
+            <p>© 2026 Course Portal. Keep it simple.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
