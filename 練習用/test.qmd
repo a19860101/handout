@@ -1,0 +1,83 @@
+---
+# title: "Python 基礎教學"
+format:
+  html:
+    output-file: handout.html
+  gfm: 
+    output-file: slides.md
+---
+::: {.content-visible when-format="html"}
+# 主標題
+:::
+
+::: {.content-visible when-format="gfm"}
+```{=gfm}
+---
+marp: true
+theme: default
+size: 16:9
+---
+```
+:::
+
+# 第一章：環境設定
+
+::: {.content-visible when-format="gfm"}
+* 安裝 Python
+* 安裝 VS Code
+* Hello World
+:::
+
+::: {.content-visible when-format="html"}
+在開始寫程式之前，我們需要先建置開發環境。
+Python 是一個跨平台的語言，請先前往 python.org 下載...
+(這裡可以寫幾千字都沒關係)
+:::
+
+
+# 第二章：變數與型態
+
+## 什麼是變數？
+
+::: {.content-visible when-format="gfm"}
+
+* 變數就像「箱子」
+* 用來儲存資料
+* Python 是動態型別
+
+:::
+
+::: {.content-visible when-format="html"}
+變數是程式語言中最基礎的概念。
+你可以把它想像成一個貼有標籤的箱子，我們可以把數據放進去，
+之後再透過標籤（變數名稱）把它拿出來使用。
+:::
+
+---
+
+## 程式碼範例
+
+```python
+# 兩邊都會顯示這段程式碼
+name = "Gemini"
+print(f"Hello, {name}")
+```
+
+### 操作流程
+
+1.  **撰寫：** 在 VS Code 編輯這個 `.qmd` 檔。
+2.  **輸出：** 開啟終端機，輸入：
+    ```bash
+    quarto render lecture_hybrid.qmd
+    ```
+    *(這會同時產生 `handout.html` 和 `slides.md`)*
+3.  **Marp 轉換：**
+    * 在 VS Code 打開剛剛產生出來的 `slides.md`。
+    * 因為我們有用「關鍵技巧」插入了 `marp: true`，這時 VS Code 的 Marp 外掛應該會自動偵測到並啟動預覽。
+    * 直接點擊 Marp 圖示 $\rightarrow$ **Export Slide Deck** $\rightarrow$ **Export to PowerPoint (.pptx)**。
+
+### 總結
+
+這個方法**完全可行**，而且結合了兩者的優點：
+* **Quarto** 幫你處理了「條件式內容」（講義 vs 簡報的內容差異）。
+* **Marp** 幫你處理了「穩定的 PPTX 輸出」。

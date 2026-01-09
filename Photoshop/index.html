@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Suguru">
+<meta name="dcterms.date" content="2026-01-09">
+
+<title>photoshop</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Photoshop_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Photoshop_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Photoshop_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Photoshop_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="Photoshop_files/libs/quarto-html/popper.min.js"></script>
+<script src="Photoshop_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Photoshop_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Photoshop_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Photoshop_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Photoshop_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Photoshop_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Photoshop_files/libs/bootstrap/bootstrap-4d7f0bce1131f3e5f9547cd857cfbfc8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="Photoshop_files/libs/quarto-contrib/kbd/kbd.js"></script>
+<link href="Photoshop_files/libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
+<script src="Photoshop_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="Photoshop_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="Photoshop_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#先備知識" id="toc-先備知識" class="nav-link active" data-scroll-target="#先備知識">先備知識</a>
+  <ul class="collapse">
+  <li><a href="#點陣圖與向量圖" id="toc-點陣圖與向量圖" class="nav-link" data-scroll-target="#點陣圖與向量圖">點陣圖與向量圖</a></li>
+  <li><a href="#基本色彩學" id="toc-基本色彩學" class="nav-link" data-scroll-target="#基本色彩學">基本色彩學</a></li>
+  </ul></li>
+  <li><a href="#基本操作" id="toc-基本操作" class="nav-link" data-scroll-target="#基本操作">基本操作</a>
+  <ul class="collapse">
+  <li><a href="#縮放顯示" id="toc-縮放顯示" class="nav-link" data-scroll-target="#縮放顯示">縮放顯示</a></li>
+  <li><a href="#移動畫面" id="toc-移動畫面" class="nav-link" data-scroll-target="#移動畫面">移動畫面</a></li>
+  </ul></li>
+  <li><a href="#選取" id="toc-選取" class="nav-link" data-scroll-target="#選取">選取</a>
+  <ul class="collapse">
+  <li><a href="#常用選取工具" id="toc-常用選取工具" class="nav-link" data-scroll-target="#常用選取工具">常用選取工具</a></li>
+  <li><a href="#常用選取功能" id="toc-常用選取功能" class="nav-link" data-scroll-target="#常用選取功能">常用選取功能</a></li>
+  <li><a href="#修改選取範圍" id="toc-修改選取範圍" class="nav-link" data-scroll-target="#修改選取範圍">修改選取範圍</a></li>
+  <li><a href="#儲存選取範圍" id="toc-儲存選取範圍" class="nav-link" data-scroll-target="#儲存選取範圍">儲存選取範圍</a></li>
+  <li><a href="#載入選取範圍" id="toc-載入選取範圍" class="nav-link" data-scroll-target="#載入選取範圍">載入選取範圍</a></li>
+  <li><a href="#選取邊緣調整" id="toc-選取邊緣調整" class="nav-link" data-scroll-target="#選取邊緣調整">選取邊緣調整</a></li>
+  <li><a href="#變形" id="toc-變形" class="nav-link" data-scroll-target="#變形">變形</a></li>
+  </ul></li>
+  <li><a href="#人像編修" id="toc-人像編修" class="nav-link" data-scroll-target="#人像編修">人像編修</a>
+  <ul class="collapse">
+  <li><a href="#基本修復工具" id="toc-基本修復工具" class="nav-link" data-scroll-target="#基本修復工具">基本修復工具</a></li>
+  <li><a href="#修掉vs修淡" id="toc-修掉vs修淡" class="nav-link" data-scroll-target="#修掉vs修淡">修掉VS修淡</a></li>
+  <li><a href="#牙齒美白" id="toc-牙齒美白" class="nav-link" data-scroll-target="#牙齒美白">牙齒美白</a></li>
+  <li><a href="#刺青" id="toc-刺青" class="nav-link" data-scroll-target="#刺青">刺青</a></li>
+  <li><a href="#皮膚柔化" id="toc-皮膚柔化" class="nav-link" data-scroll-target="#皮膚柔化">皮膚柔化</a></li>
+  </ul></li>
+  <li><a href="#youtube" id="toc-youtube" class="nav-link" data-scroll-target="#youtube">Youtube</a></li>
+  <li><a href="#常用快捷鍵" id="toc-常用快捷鍵" class="nav-link" data-scroll-target="#常用快捷鍵">常用快捷鍵</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<p class="subtitle lead">Photoshop基礎</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Suguru </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 9, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="先備知識" class="level2">
+<h2 class="anchored" data-anchor-id="先備知識">先備知識</h2>
+<section id="點陣圖與向量圖" class="level3">
+<h3 class="anchored" data-anchor-id="點陣圖與向量圖">點陣圖與向量圖</h3>
+<ul>
+<li>點陣圖 (Pixel-based)： 由無數個小方格（像素）組成。放大後會模糊、出現鋸齒（馬賽克）。</li>
+</ul>
+<blockquote class="blockquote">
+<p>適用： 照片、複雜的繪畫、光影變化豐富的圖像。</p>
+</blockquote>
+<ul>
+<li>向量圖 (Vector)： 由數學公式運算出的線條和色塊。無限放大都不會模糊。</li>
+</ul>
+<blockquote class="blockquote">
+<p>適用： Logo、文字排版、圖標。</p>
+</blockquote>
+<p>先備觀念： 在 PS 裡放大圖片是有極限的，畫質一旦破壞通常救不回來。</p>
+<hr>
+</section>
+<section id="基本色彩學" class="level3">
+<h3 class="anchored" data-anchor-id="基本色彩學">基本色彩學</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="rgb" class="level4">
+<h4 class="anchored" data-anchor-id="rgb">RGB</h4>
+<ul>
+<li>Red,Green,Blue</li>
+<li>色光三原色</li>
+<li>加色</li>
+</ul>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="cmyk" class="level4">
+<h4 class="anchored" data-anchor-id="cmyk">CMYK</h4>
+<ul>
+<li>Cyan,Magenta,Yellow,Black</li>
+<li>色料三原色</li>
+<li>減色</li>
+</ul>
+</section>
+</div>
+</div>
+</section>
+</section>
+<section id="基本操作" class="level2">
+<h2 class="anchored" data-anchor-id="基本操作">基本操作</h2>
+<section id="縮放顯示" class="level3">
+<h3 class="anchored" data-anchor-id="縮放顯示">縮放顯示</h3>
+<ul>
+<li>縮放顯示工具（Z） &gt; 搭配Alt切換放大縮小</li>
+<li><kbd title="Alt" aria-hidden="true">Alt</kbd><span class="visually-hidden">Alt</span> + 滾輪</li>
+<li><kbd title="Ctrl++" aria-hidden="true">Ctrl++</kbd><span class="visually-hidden">Ctrl++</span>,<kbd title="Ctrl+-" aria-hidden="true">Ctrl+-</kbd><span class="visually-hidden">Ctrl+-</span></li>
+<li><p><kbd title="Ctrl+0" aria-hidden="true">Ctrl+0</kbd><span class="visually-hidden">Ctrl+0</span></p></li>
+<li><p><kbd title="Ctrl+1" aria-hidden="true">Ctrl+1</kbd><span class="visually-hidden">Ctrl+1</span></p></li>
+</ul>
+</section>
+<section id="移動畫面" class="level3">
+<h3 class="anchored" data-anchor-id="移動畫面">移動畫面</h3>
+<ul>
+<li>手形工具（H）</li>
+<li><kbd title="Space" aria-hidden="true">Space</kbd><span class="visually-hidden">Space</span>空白鍵</li>
+</ul>
+</section>
+</section>
+<section id="選取" class="level2">
+<h2 class="anchored" data-anchor-id="選取">選取</h2>
+<p>選取是Photoshop重要的基礎之一，不管合成還是修圖，都必須有正確的選取範圍。</p>
+<section id="常用選取工具" class="level3">
+<h3 class="anchored" data-anchor-id="常用選取工具">常用選取工具</h3>
+<ul>
+<li>矩形與橢圓選取工具：當形狀是圓形或是矩形時可使用</li>
+<li>套索類工具：當形狀不規則但邊緣明確時可使用</li>
+<li>物件選取工具：AI智慧偵測，可直接選取人物、物體。</li>
+<li>快速選取工具：自動辨別邊緣。</li>
+<li>魔術棒工具：點擊顏色相近的區域，快速選取。</li>
+<li>筆型工具：可選取各式邊緣的工具，繪製完成使用<kbd title="Ctrl" aria-hidden="true">Ctrl</kbd><span class="visually-hidden">Ctrl</span>+<kbd title="Enter" aria-hidden="true">Enter</kbd><span class="visually-hidden">Enter</span>轉換選取範圍</li>
+</ul>
+</section>
+<section id="常用選取功能" class="level3">
+<h3 class="anchored" data-anchor-id="常用選取功能">常用選取功能</h3>
+<ul>
+<li>選取主體：按一下，Photoshop 自動判斷畫面主角是誰並選取。</li>
+<li>選取天空：自動把天空選起來，修風景照換天空專用。</li>
+<li>顏色範圍：魔術棒加強版，可以一次選取照片中相同顏色，並且可以透過朦朧調整顏色的範圍。</li>
+</ul>
+</section>
+<section id="修改選取範圍" class="level3">
+<h3 class="anchored" data-anchor-id="修改選取範圍">修改選取範圍</h3>
+<p>使用選取類工具的過程中，可以對選取範圍進行修改，例如變形、增加、縮放等</p>
+<ul>
+<li>增加選取範圍：<kbd title="Shift" aria-hidden="true">Shift</kbd><span class="visually-hidden">Shift</span></li>
+<li>減去選取範圍：<kbd title="Alt" aria-hidden="true">Alt</kbd><span class="visually-hidden">Alt</span></li>
+<li>交集選取範圍：<kbd title="Shift+Alt" aria-hidden="true">Shift+Alt</kbd><span class="visually-hidden">Shift+Alt</span></li>
+<li>修改選取範圍：選取／變形選取範圍</li>
+<li>反轉選取範圍：選取／反轉<kbd title="Ctrl+Shift+I" aria-hidden="true">Ctrl+Shift+I</kbd><span class="visually-hidden">Ctrl+Shift+I</span></li>
+<li>取消選取範圍：<kbd title="Ctrl+D" aria-hidden="true">Ctrl+D</kbd><span class="visually-hidden">Ctrl+D</span></li>
+</ul>
+</section>
+<section id="儲存選取範圍" class="level3">
+<h3 class="anchored" data-anchor-id="儲存選取範圍">儲存選取範圍</h3>
+<p>若要儲存你的選取範圍以備不時之需，可以直接存在色版內。</p>
+<ul>
+<li>選取／儲存選取範圍</li>
+</ul>
+<p>也可以直接新增遮色片當作儲存範圍</p>
+<blockquote class="blockquote">
+<p>白色代表選取，黑色代表為沒有選取</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>若使用筆型工具選取，則會有路徑產生，路徑也可以當作選取範圍使用</p>
+</blockquote>
+</section>
+<section id="載入選取範圍" class="level3">
+<h3 class="anchored" data-anchor-id="載入選取範圍">載入選取範圍</h3>
+<p>按住<kbd title="Ctrl" aria-hidden="true">Ctrl</kbd><span class="visually-hidden">Ctrl</span>點選遮色片、色版或路徑，即可載入選取範圍。</p>
+</section>
+<section id="選取邊緣調整" class="level3">
+<h3 class="anchored" data-anchor-id="選取邊緣調整">選取邊緣調整</h3>
+<p>選取／修改</p>
+<ul>
+<li>邊界：將選取範圍變成邊界。</li>
+<li>平滑：將邊緣平滑化。</li>
+<li>擴張：將選取範圍往外擴張。</li>
+<li>縮減：將選取範圍往內縮減。</li>
+<li>羽化：羽化邊緣。</li>
+</ul>
+<blockquote class="blockquote">
+<p>若邊緣為毛邊或柔邊，可以使用「選取並遮住」調整</p>
+</blockquote>
+</section>
+<section id="變形" class="level3">
+<h3 class="anchored" data-anchor-id="變形">變形</h3>
+<p>選取之後，可以將選取的像素複製或是變形來進行合成或修圖。 在選取範圍內按滑鼠右鍵／任意變形，或是編輯／任意變形，或是<kbd title="Ctrl+T" aria-hidden="true">Ctrl+T</kbd><span class="visually-hidden">Ctrl+T</span> ## 影像調整</p>
+</section>
+</section>
+<section id="人像編修" class="level2">
+<h2 class="anchored" data-anchor-id="人像編修">人像編修</h2>
+<section id="基本修復工具" class="level3">
+<h3 class="anchored" data-anchor-id="基本修復工具">基本修復工具</h3>
+<ul>
+<li>汙點修復筆刷</li>
+<li>修復筆刷</li>
+<li>修補工具</li>
+<li>紅眼工具</li>
+<li>仿製印章</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 38%">
+<col style="width: 20%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">汙點修復筆刷</th>
+<th style="text-align: center;">修復筆刷</th>
+<th style="text-align: center;">仿製印章</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>取樣 <kbd title="Alt" aria-hidden="true">Alt</kbd><span class="visually-hidden">Alt</span></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">O</td>
+<td style="text-align: center;">O</td>
+</tr>
+<tr class="even">
+<td>抹勻</td>
+<td style="text-align: center;">O</td>
+<td style="text-align: center;">O</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="odd">
+<td>適用</td>
+<td style="text-align: center;">適合顏色差異不大的小範圍修補</td>
+<td style="text-align: center;">適合大部分修復</td>
+<td style="text-align: center;">適合不需要與原圖融合的修復</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="修掉vs修淡" class="level3">
+<h3 class="anchored" data-anchor-id="修掉vs修淡">修掉VS修淡</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">---
+title: 瑕疵修復
+---
+
+flowchart LR
+    A[開始修圖] --&gt; B[修掉or修淡]
+    B --&gt; |修掉| C[仿製印章or修復筆刷]
+    B --&gt; |修淡| D[仿製印章]
+    C --&gt; |顏色差異大|E[先仿製印章減少顏色差異]
+    C --&gt; |顏色差異小|F[修復筆刷]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="牙齒美白" class="level3">
+<h3 class="anchored" data-anchor-id="牙齒美白">牙齒美白</h3>
+<ul>
+<li>新增調整圖層／色相飽和度</li>
+<li>將色彩換成黃色</li>
+<li>明亮拉到最大，飽和度降低</li>
+</ul>
+</section>
+<section id="刺青" class="level3">
+<h3 class="anchored" data-anchor-id="刺青">刺青</h3>
+<ul>
+<li>大略選取刺青，並且複製到要合成的人像照片中</li>
+<li>將刺青去除飽和度，並且將背景調整成純白</li>
+<li>使用色彩增值，去除白色部分</li>
+<li>若還有灰色的部分沒有消失，再使用色階或曲線</li>
+</ul>
+</section>
+<section id="皮膚柔化" class="level3">
+<h3 class="anchored" data-anchor-id="皮膚柔化">皮膚柔化</h3>
+<section id="適用棚拍或妝容較完整的人像" class="level4">
+<h4 class="anchored" data-anchor-id="適用棚拍或妝容較完整的人像">適用棚拍或妝容較完整的人像</h4>
+<ul>
+<li>複製圖層（Ctrl+J）</li>
+<li>濾鏡／其他／顏色快調</li>
+<li>濾鏡／模糊／高斯模糊：數值約為顏色快調的⅓</li>
+<li>影像／調整／負片效果（Ctrl + I）</li>
+<li>混合模式：線性光源</li>
+<li>加上黑色圖層遮色片，把效果全部遮住，再用白色筆刷畫出柔化部分</li>
+<li>可以再用圖層透明度調節整體柔化</li>
+</ul>
+</section>
+<section id="適用於大部分人像柔化" class="level4">
+<h4 class="anchored" data-anchor-id="適用於大部分人像柔化">適用於大部分人像柔化</h4>
+<ul>
+<li>複製圖層（Ctrl+J）</li>
+<li>混合模式：覆蓋</li>
+<li>影像／調整／負片效果（Ctrl + I）</li>
+<li>濾鏡／其他／顏色快調。柔化皮膚。</li>
+<li>濾鏡／模糊／高斯模糊。加上紋理，若不需要還原此步可省略，</li>
+<li>加上黑色圖層遮色片，把效果全部遮住，再用白色筆刷畫出柔化部分</li>
+<li>可以再用圖層透明度調節整體柔化</li>
+</ul>
+</section>
+<section id="雀斑" class="level4">
+<h4 class="anchored" data-anchor-id="雀斑">雀斑</h4>
+<ul>
+<li>複製圖層（Ctrl+J）</li>
+<li>混合模式：強烈光源</li>
+<li>影像／調整／負片效果（Ctrl + I）</li>
+<li>濾鏡／其他／顏色快調。調整斑點與皮膚之間的柔化</li>
+<li>加上黑色圖層遮色片，把效果全部遮住，再用白色筆刷畫出柔化部分</li>
+<li>可以再用圖層透明度調節整體柔化</li>
+<li>可以重複上述步驟</li>
+</ul>
+<blockquote class="blockquote">
+<p>雀斑通常顏色不會一樣，所以通常會執行兩次到三次。 重複步驟之前可以先合併（Ctrl + Alt + E）。</p>
+</blockquote>
+</section>
+<section id="色板柔化" class="level4">
+<h4 class="anchored" data-anchor-id="色板柔化">色板柔化</h4>
+<ul>
+<li>複製圖層（Ctrl+J）</li>
+<li>切換到色版面版，找到對比度最大的色版，通常是藍色色版</li>
+<li>複製藍色色版，並套用顏色快調</li>
+<li>影像／運算，來源1來源2不動，混合選擇線性光源或強烈光源。</li>
+<li>若對比度不夠可重複執行上一步</li>
+<li>影像／調整／負片效果</li>
+<li>載入該色版選取範圍</li>
+<li>點擊RGB色版，回到圖層面版，將剛剛的選取範圍複製到新圖層</li>
+<li>調整色階或曲線</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="youtube" class="level2">
+<h2 class="anchored" data-anchor-id="youtube">Youtube</h2>
+<p><a href="https://www.youtube.com/watch?v=DlhRUUews2Y">影像上光</a> <a href="https://www.youtube.com/watch?v=J0BLH41cL0k">移除雀斑(色板)</a> <a href="https://www.youtube.com/watch?v=WfFnh0eP6HE">移除雀斑</a> <a href="https://www.youtube.com/watch?v=JikLfXu--Jg">皮膚柔化</a> <a href="https://www.youtube.com/watch?v=RvCDzD_mDHo">牙齒美白</a></p>
+</section>
+<section id="常用快捷鍵" class="level2">
+<h2 class="anchored" data-anchor-id="常用快捷鍵">常用快捷鍵</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>快捷鍵</th>
+<th>內容</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ctrl + A</td>
+<td>全選</td>
+</tr>
+<tr class="even">
+<td>Ctrl + B</td>
+<td>色彩平衡</td>
+</tr>
+<tr class="odd">
+<td>Ctrl + C</td>
+<td>複製</td>
+</tr>
+<tr class="even">
+<td>Ctrl + D</td>
+<td>取消選取範圍</td>
+</tr>
+<tr class="odd">
+<td>Ctrl + E</td>
+<td>合併圖層</td>
+</tr>
+<tr class="even">
+<td>Ctrl + Alt + Shift + E</td>
+<td>合併可見圖層後複製</td>
+</tr>
+<tr class="odd">
+<td>Ctrl + G</td>
+<td>群組圖層</td>
+</tr>
+<tr class="even">
+<td>Ctrl + I</td>
+<td>負片效果</td>
+</tr>
+<tr class="odd">
+<td>Ctrl + J</td>
+<td>拷貝至新圖層</td>
+</tr>
+<tr class="even">
+<td>Ctrl + K</td>
+<td>偏好設定</td>
+</tr>
+<tr class="odd">
+<td>Ctrl + L</td>
+<td>色階</td>
+</tr>
+<tr class="even">
+<td>Ctrl + M</td>
+<td>曲線</td>
+</tr>
+<tr class="odd">
+<td>Ctrl + N</td>
+<td>開新檔案</td>
+</tr>
+<tr class="even">
+<td>Ctrl + O</td>
+<td>開啟舊檔</td>
+</tr>
+<tr class="odd">
+<td>Ctrl + R</td>
+<td>尺標</td>
+</tr>
+<tr class="even">
+<td>Ctrl + S</td>
+<td>儲存檔案</td>
+</tr>
+<tr class="odd">
+<td>Ctrl + T</td>
+<td>任意變形</td>
+</tr>
+<tr class="even">
+<td>Ctrl + U</td>
+<td>色相飽和度</td>
+</tr>
+<tr class="odd">
+<td>Ctrl + V</td>
+<td>貼上</td>
+</tr>
+<tr class="even">
+<td>Ctrl + Z</td>
+<td>回復上一步</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

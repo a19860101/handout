@@ -1,0 +1,13 @@
+{
+	"Marp separated": {
+		"prefix": "marp-",
+		"body": [
+			"::: {.content-visible when-format=\"gfm\"}",
+			"```{=gfm}",
+			"---",
+			"```",
+			":::"
+		],
+		"description": ""
+	}
+}

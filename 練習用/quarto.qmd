@@ -1,0 +1,66 @@
+---
+title: Quarto 練習
+subtitle: "一份檔案，兩種產出"
+author: "Suguru"
+date: last-modified
+# mainfont: "Microsoft JhengHei" 
+format:
+    # 1. 給學生的網頁講義
+    html:
+        output-file: handout.html
+        toc: true
+  
+    # 2. 給學生的 Word 檔
+    docx:
+        output-file: handout.docx
+        toc: true
+
+    # 3. 給學生的 PDF 檔 (記得先跑 quarto install tinytex)
+    pdf:
+        output-file: handout.pdf
+        toc: true
+        pdf-engine: xelatex
+        mainfont: "Microsoft JhengHei" 
+        CJKmainfont: "Microsoft JhengHei" # 👈 關鍵 3：強制指定中文字型
+        # number-sections: true
+
+    # 4. 上課用的簡報
+    revealjs:
+        output-file: slides.html
+        theme: default
+    
+---
+
+## Quarto 練習
+```{=html}
+<h1>hello 123 456</h1>
+```
+
+### 光圈
+
+控制光線進入的量
+
+單位：f值，如f1.8、f8
+
+數值愈小，光圈愈大，進光量愈多，景深愈淺
+數值愈大，光圈愈小，進光量愈少，景深愈深
+
+## 流程圖
+```{mermaid}
+---
+title: 瑕疵修復
+---
+
+flowchart TB
+    A[開始修圖] --> B[修掉or修淡]
+    B --> |修掉| C[仿製印章or修復筆刷]
+    B --> |修淡| D[仿製印章]
+    C --> |顏色差異大|E[先仿製印章減少顏色差異]
+    C --> |顏色差異小|F[修復筆刷]
+```
+page 1
+
+{{< pagebreak >}}
+
+page 2
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}

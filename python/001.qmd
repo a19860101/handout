@@ -1,0 +1,147 @@
+---
+title: "Quarto 教學功能速查表"
+subtitle: "一份檔案，兩種產出"
+author: "老師的講義"
+date: last-modified
+format:
+  # 設定一：給學生的講義 (HTML)
+  html:
+    output-file: handout.html  # 輸出檔名
+    toc: true                  # 顯示目錄
+    number-sections: true      # 章節編號
+    code-fold: true            # 允許學生摺疊/展開程式碼
+    theme: cosmo               # 講義的配色主題
+
+  # 設定二：上課用的簡報 (RevealJS)
+  revealjs:
+    output-file: slides.html   # 輸出檔名
+    theme: default             # 簡報的配色主題
+    slide-number: true         # 顯示頁碼
+    preview-links: auto        # 預覽連結
+    footer: "Python 課程範例"   # 每一頁的頁尾
+---
+
+# 1. 內容分流 (Conditional Content)
+
+這一段文字兩邊都會出現。
+
+::: {.content-visible when-format="revealjs"}
+## 簡報專屬重點
+* **重點一**：這是簡報才有的
+* **重點二**：字體大，條列式
+* **重點三**：適合快速瀏覽
+:::
+
+::: {.content-visible when-format="html"}
+**這段文字是講義專屬的詳細解說。**
+因為上課簡報空間有限，老師通常只會放關鍵字。
+但在這份給同學帶回家的講義中，我們可以完整敘述脈絡、歷史背景以及更深入的技術細節。
+:::
+
+# 2. 雙欄排版 (Two Columns)
+
+## 左右對照範例
+
+:::: {.columns}
+
+::: {.column width="40%"}
+**左側說明區**
+
+這裡適合放：
+1. 文字解說
+2. 條列重點
+3. 圖片說明
+
+可以看到右邊是程式碼 $\rightarrow$
+:::
+
+::: {.column width="60%"}
+**右側程式區**
+
+```python
+def hello(name):
+    return f"Hello, {name}!"
+
+print(hello("Student"))
+:::
+
+::::
+
+3. 逐條顯示 (Incremental Lists)
+猜猜看答案是什麼？
+問題：Python 是哪一年發布的？
+
+. . .
+
+答案：1991 年
+
+. . .
+
+問題：誰是 Python 之父？
+
+. . .
+
+答案：Guido van Rossum
+
+(在簡報模式下，按一下才會出現下一行；在講義模式下會直接全部顯示)
+
+4. 執行 Python 程式碼 (Code Blocks)
+即時繪圖
+這不是截圖，是 Quarto 即時執行的結果：
+
+程式碼片段
+```python
+#| label: fig-plot
+#| fig-cap: "簡單的正弦波圖"
+#| echo: true
+#| code-line-numbers: "4-5"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.figure(figsize=(8, 4))
+plt.plot(x, y, color='blue')
+plt.title("Sine Wave")
+plt.grid(True)
+plt.show()
+```
+(注意：若要執行這一段，您的電腦需安裝 Python 以及 matplotlib 套件)
+
+5. 醒目提示框 (Callouts)
+常用的提示類型
+::: {.callout-note}
+
+筆記 Note
+這是藍色的筆記框，適合放補充說明。 
+:::
+
+::: {.callout-tip}
+
+技巧 Tip
+這是綠色的技巧框，適合放實用的小撇步。 
+:::
+
+::: {.callout-warning}
+
+注意 Warning
+這是黃色的警告框，適合放易錯點提醒。 
+:::
+
+::: {.callout-important}
+
+重要 Important
+這是紅色的重要框，期末考必考重點！ 
+:::
+
+
+### 如何使用這份模版
+
+1.  在 VS Code 新增檔案 `cheat_sheet.qmd`。
+2.  貼上上述內容。
+3.  開啟終端機，執行以下指令產出兩種檔案：
+
+    * **產出講義：** `quarto render cheat_sheet.qmd --to html`
+    * **產出簡報：** `quarto render cheat_sheet.qmd --to revealjs`
