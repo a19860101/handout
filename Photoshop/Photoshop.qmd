@@ -1,6 +1,6 @@
 ---
-# title: Quarto 練習
-subtitle: "Photoshop基礎"
+# title: 
+# subtitle: "Photoshop基礎"
 author: "Suguru"
 date: last-modified
 theme: cosmo
@@ -33,6 +33,10 @@ format:
     gfm: 
         output-file: slides.md
 ---
+::: {.content-visible when-format="html"}
+# Photoshop
+:::
+
 ## 先備知識
 
 ::: {.content-visible when-format="gfm"}
