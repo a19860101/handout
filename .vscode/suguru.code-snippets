@@ -9,5 +9,34 @@
 			":::"
 		],
 		"description": ""
+	},
+	"qc2": {
+		"prefix":"qc2",
+		"body": [
+			"::::{.columns}",
+			":::{.column width=50%}",
+			"",
+			":::",
+			":::{.column width=50%}",
+			"",
+			":::",
+			"::::",
+		]
+	},
+	"qc3": {
+		"prefix":"qc3",
+		"body": [
+			"::::{.columns}",
+			":::{.column width=33%}",
+			"",
+			":::",
+			":::{.column width=33%}",
+			"",
+			":::",
+			":::{.column width=33%}",
+			"",
+			":::",
+			"::::",
+		]
 	}
 }

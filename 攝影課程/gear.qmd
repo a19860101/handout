@@ -1,0 +1,369 @@
+---
+author: "Suguru"
+date: last-modified
+theme: cosmo
+format:
+    # 1. 給學生的網頁講義
+    html:
+        output-file: gear.html
+        toc: true
+        format-links: false
+    # 4. 上課用的簡報
+    revealjs:
+        output-file: slides.html
+        theme: default
+    gfm: 
+        output-file: slides.md
+---
+
+# 攝影器材介紹
+
+::::{.columns}
+:::{.column width=50%}
+## 相機種類
+
+- 數位相機
+- 單眼相機
+- 運動相機
+- 手機
+:::
+:::{.column width=40%}
+![](images/conor-luddy-IVaKksEZmZA-unsplash.jpg)
+:::
+
+::::
+
+
+## 數位相機
+
+::::{.columns}
+:::{.column width=50%}
+- 輕便
+- ~~價格親民~~
+- ***不可換鏡頭***
+:::
+:::{.column width=50%}
+![](images/RX100_VII.png)
+
+:::
+::::
+
+![](images/ricoh.png)
+
+
+## 單眼相機
+
+::::{.columns}
+
+:::{.column width=50%}
+- 單眼相機
+- 無反光鏡單眼相機
+:::
+:::{.column width=50%}
+![](images/sonya73.jpg)
+:::
+::::
+
+## 感光元件
+依照尺寸大小分類
+
+- 中片幅
+- 全片幅
+- 片幅
+- M4/3
+
+依照技術分類
+
+- CMOS
+- CCD
+
+## 單眼相機特色
+
+- ***感光元件較大***
+- 可換鏡頭
+- 各項功能通常較好
+
+
+
+## 鏡頭
+::::{.columns}
+:::{.column width=50%}
+- 定焦鏡
+- 變焦鏡
+  - 廣角：35mm以下
+  - 標準：35-70mm
+  - 望遠：70mm以上
+- 微距鏡
+- 旅遊鏡
+:::
+:::{.column width=50%}
+
+![](images/lenss.jpeg)
+:::
+::::
+
+## 鏡頭規格標示
+
+![bg left](images/lens.jpeg)
+
+- 卡口
+- 焦段
+- 光圈
+- 種類
+- 功能
+
+
+### <!--fit-->Canon
+::::{.columns}
+:::{.column width=50%}
+
+![bg contain](images/canon-1.png)
+:::
+:::{.column width=50%}
+
+![bg contain](images/canon-2.png)
+:::
+::::
+
+
+
+
+### 常見代號
+
+- EF/RF：適用的卡口
+- L：俗稱的L鏡，C家中的高級鏡頭，前端有紅色圈圈
+- IS：光學防手震
+- STM：步進對焦馬達
+- USM：超音波馬達
+- Marco：微距鏡
+- Fisheye：魚眼
+
+
+
+## <!--fit--> Sony
+
+::::{.columns}
+:::{.column width=33%}
+![](images/sony-1.png)
+:::
+:::{.column width=33%}
+![](images/sony-2.png)
+:::
+:::{.column width=33%}
+![](images/sony-3.png)
+:::
+::::
+
+
+
+
+::::{.columns}
+:::{.column width=33%}
+![](images/sony-4.png)
+:::
+:::{.column width=33%}
+![](images/sony-5.png)
+:::
+:::{.column width=33%}
+![](images/sony-6.png)
+:::
+::::
+
+
+
+
+<!--  -->
+- E/FE：適用的卡口
+- GM：俗稱GM鏡，S家的高規鏡頭，鏡頭上方會有橘色Logo
+- ZA：蔡司鏡片
+- G：規格次高的鏡頭
+- OSS：光學防手震
+- PZ：電動馬達
+- SSM：超音波對焦馬達
+
+
+
+
+## 運動相機
+::::{.columns}
+:::{.column width=50%}
+
+- 運動相機
+- 360相機
+- 拇指相機
+- 其他
+:::
+:::{.column width=50%}
+
+![bg left](images/大gopro.jpeg)
+:::
+::::
+
+
+::::{.columns}
+:::{.column width=33%}
+![bg contain vertical](images/gopro.png)
+:::
+:::{.column width=33%}
+![bg contain](images/dji.png)
+:::
+:::{.column width=33%}
+![bg w:500](images/insta360.png)
+:::
+::::
+
+
+## 特性
+::::{.columns}
+:::{.column width=50%}
+- 防水防震
+- 體積小
+- 多配件支援
+- 相對適合極端環境
+:::
+:::{.column width=50%}
+![insta 360](images/elio-santos-kwGeRBkER-E-unsplash.jpeg)
+:::
+::::
+
+::::{.columns}
+:::{.column width=33%}
+![Gopro 13](images/Gopro13.png)
+:::
+:::{.column width=33%}
+![DJI Osmo Action 6](images/Dji-osmo-action-6.png)
+
+:::
+:::{.column width=33%}
+![Insta360 Ace Pro](images/Insta360-Ace-Pro.png)
+
+:::
+::::
+
+::::{.columns}
+:::{.column width=33%}
+![DJI 360](images/Dji-360.png)
+
+:::
+:::{.column width=33%}
+![Insta360 x5](images/Insta360-x5.png)
+
+:::
+:::{.column width=33%}
+
+:::
+::::
+
+::::{.columns}
+:::{.column width=25%}
+![Insta360 Go 3s](images/go3s-1.png)
+
+:::
+:::{.column width=25%}
+![](images/go3s-2.png)
+
+:::
+:::{.column width=25%}
+![DJI Go Ultra](images/goultra-1.png)
+
+:::
+:::{.column width=25%}
+![](images/goultra-2.png)
+
+:::
+::::
+::::{.columns}
+:::{.column width=50}
+![DJI Nano](images/dji-nano-1.png)
+
+:::
+:::{.column width=50}
+![](images/dji-nano-2.png)
+
+:::
+
+::::
+
+![DJI Osmo Pocket 2](images/dji-osmo-pocket.png)
+
+
+
+## 空拍機
+
+會飛
+
+::::{.columns}
+:::{.column width=33%}
+
+![](images/fly-1.png)
+:::
+:::{.column width=33%}
+![](images/fly-2.png)
+
+:::
+:::{.column width=33%}
+![](images/fly-3.png)
+:::
+::::
+
+
+
+## 燈具
+- 持續燈
+- 閃光燈
+
+::::{.columns}
+:::{.column width=50%}
+![持續燈](images/lighting.jpeg)
+:::
+:::{.column width=50%}
+![閃光燈](images/flash.jpg)
+:::
+::::
+
+
+## 濾鏡
+::::{.columns}
+:::{.column width=50%}
+
+- UV保護鏡
+- 偏光鏡（CPL）
+- 減光鏡（ND）
+- 黑柔
+:::
+:::{.column width=50%}
+
+![](images/nd.jpeg)
+:::
+::::
+
+
+
+
+
+<!-- ## 收音器材
+
+- 指向式麥克風
+- 無線麥克風
+
+![bg vertical left](images/micro-1.jpeg)
+![bg](images/micro-2.jpg)
+
+ -->
+
+## 其他配件
+
+::::{.columns}
+:::{.column width=50%}
+![](images/lighting_gears.jpeg)
+
+:::
+:::{.column width=50%}
+- 柔光罩、柔光傘、柔光箱
+- 反光板
+- 背景架
+- 燈架、腳架
+:::
+::::
+
+
