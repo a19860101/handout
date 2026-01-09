@@ -76,6 +76,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#選取邊緣調整" id="toc-選取邊緣調整" class="nav-link" data-scroll-target="#選取邊緣調整">選取邊緣調整</a></li>
   <li><a href="#變形" id="toc-變形" class="nav-link" data-scroll-target="#變形">變形</a></li>
   </ul></li>
+  <li><a href="#影像調整" id="toc-影像調整" class="nav-link" data-scroll-target="#影像調整">影像調整</a>
+  <ul class="collapse">
+  <li><a href="#色相飽和度" id="toc-色相飽和度" class="nav-link" data-scroll-target="#色相飽和度">色相飽和度</a></li>
+  <li><a href="#自然飽和度" id="toc-自然飽和度" class="nav-link" data-scroll-target="#自然飽和度">自然飽和度</a></li>
+  <li><a href="#色階" id="toc-色階" class="nav-link" data-scroll-target="#色階">色階</a></li>
+  <li><a href="#曲線" id="toc-曲線" class="nav-link" data-scroll-target="#曲線">曲線</a></li>
+  <li><a href="#黑白" id="toc-黑白" class="nav-link" data-scroll-target="#黑白">黑白</a></li>
+  <li><a href="#色彩平衡" id="toc-色彩平衡" class="nav-link" data-scroll-target="#色彩平衡">色彩平衡</a></li>
+  </ul></li>
   <li><a href="#人像編修" id="toc-人像編修" class="nav-link" data-scroll-target="#人像編修">人像編修</a>
   <ul class="collapse">
   <li><a href="#基本修復工具" id="toc-基本修復工具" class="nav-link" data-scroll-target="#基本修復工具">基本修復工具</a></li>
@@ -165,6 +174,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </div>
 </div>
+<p>色光與色料都算是原色，彼此有互補關係。</p>
+<p><strong>紅色</strong>降低時，綠色跟藍色較多，綠色加藍色為<strong>青色</strong><br> <strong>綠色</strong>降低時，紅色跟藍色較多，紅色加藍色為<strong>洋紅色</strong><br> <strong>藍色</strong>降低時，紅色跟綠色較多，紅色加綠色為<strong>黃色</strong></p>
 </section>
 </section>
 <section id="基本操作" class="level2">
@@ -255,7 +266,54 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="變形" class="level3">
 <h3 class="anchored" data-anchor-id="變形">變形</h3>
-<p>選取之後，可以將選取的像素複製或是變形來進行合成或修圖。 在選取範圍內按滑鼠右鍵／任意變形，或是編輯／任意變形，或是<kbd title="Ctrl+T" aria-hidden="true">Ctrl+T</kbd><span class="visually-hidden">Ctrl+T</span> ## 影像調整</p>
+<p>選取之後，可以將選取的像素複製或是變形來進行合成或修圖。 在選取範圍內按滑鼠右鍵／任意變形，或是編輯／任意變形，或是<kbd title="Ctrl+T" aria-hidden="true">Ctrl+T</kbd><span class="visually-hidden">Ctrl+T</span></p>
+</section>
+</section>
+<section id="影像調整" class="level2">
+<h2 class="anchored" data-anchor-id="影像調整">影像調整</h2>
+<section id="色相飽和度" class="level3">
+<h3 class="anchored" data-anchor-id="色相飽和度">色相飽和度</h3>
+<ul>
+<li>色相：顏色的種類，拉動滑桿化改變整體了色彩</li>
+<li>飽和度：顏色的鮮豔程度。數值愈高，顏色愈鮮艷；數值愈低，顏色愈不鮮艷，最低會變成灰階。</li>
+<li>明度：顏色的明度。數值愈高，顏色愈亮；數值愈低，顏色愈暗。</li>
+</ul>
+<blockquote class="blockquote">
+<p>灰階代表沒有色相，當相片為灰階時，色相滑桿不會有反應，若要上色可以勾選右下「上色」</p>
+</blockquote>
+</section>
+<section id="自然飽和度" class="level3">
+<h3 class="anchored" data-anchor-id="自然飽和度">自然飽和度</h3>
+<p>飽和度修改時，所有顏色同時進行增減。<br> 自然飽和度提高時，飽和度較低的顏色會提高較多；自然飽和度調低時，飽和度較高的會調低較多</p>
+</section>
+<section id="色階" class="level3">
+<h3 class="anchored" data-anchor-id="色階">色階</h3>
+<p>控制明暗的起點與終點</p>
+<ul>
+<li><p>輸出色階<br> 左邊為0，右邊為255，每張照片都應該存在0-255的所有色階，若左邊調到50，表示少了0-49的色階，所以照片會感覺變亮；反之右邊調到200，則少了201-255的色階，此時照片就會感覺變暗</p></li>
+<li><p>輸入色階<br> 左邊為0，右邊為255。若左邊調到50，表示0-49的色階都改用黑色顯示，此時照片會變暗；右邊調到200，表示201-255都改用白色顯示，此時照片會變亮。中間滑桿代表gamma，往左調表示將更多像素歸為亮部，照片便亮；往右調表示更多像素歸為暗部，照片變暗</p></li>
+</ul>
+</section>
+<section id="曲線" class="level3">
+<h3 class="anchored" data-anchor-id="曲線">曲線</h3>
+<p>跟色階相同原理，只是將它變成座標顯示。</p>
+<ul>
+<li>X軸：輸入色階</li>
+<li>Y軸：輸出色階</li>
+<li>線：預設為45度直線，表示輸入等於輸出，沒有任何變化</li>
+</ul>
+<p>往上調代表輸出大於輸入，相片變亮；往下調代表輸出小於輸入，相片變暗。</p>
+<blockquote class="blockquote">
+<p>色階或曲線都可以改變調整的色版，達到改變相片顏色的目的。</p>
+</blockquote>
+</section>
+<section id="黑白" class="level3">
+<h3 class="anchored" data-anchor-id="黑白">黑白</h3>
+<p>將相片變為灰階，並且可以調整六個原色的黑白程度。</p>
+</section>
+<section id="色彩平衡" class="level3">
+<h3 class="anchored" data-anchor-id="色彩平衡">色彩平衡</h3>
+<p>調整陰影、亮部、中間調的各色分布。可以參考前面的色光與色料三原色。</p>
 </section>
 </section>
 <section id="人像編修" class="level2">
