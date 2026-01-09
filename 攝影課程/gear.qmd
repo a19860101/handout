@@ -117,11 +117,11 @@ format:
 ::::{.columns}
 :::{.column width=50%}
 
-![bg contain](images/canon-1.png)
+![](images/canon-1.png)
 :::
 :::{.column width=50%}
 
-![bg contain](images/canon-2.png)
+![](images/canon-2.png)
 :::
 ::::
 
@@ -195,20 +195,20 @@ format:
 :::
 :::{.column width=50%}
 
-![bg left](images/大gopro.jpeg)
+![](images/大gopro.jpeg)
 :::
 ::::
 
 
 ::::{.columns}
 :::{.column width=33%}
-![bg contain vertical](images/gopro.png)
+![](images/gopro.png)
 :::
 :::{.column width=33%}
-![bg contain](images/dji.png)
+![](images/dji.png)
 :::
 :::{.column width=33%}
-![bg w:500](images/insta360.png)
+![](images/insta360.png)
 :::
 ::::
 
